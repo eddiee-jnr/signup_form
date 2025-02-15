@@ -1,0 +1,114 @@
+:root {
+    --border_color: black;
+    --input_height: 25px;
+    --input_width: 250px;
+    --bg_color: rgb(247, 246, 246);
+    --left_padding: 25px;
+    --fontStyle: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    --input_shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+body {
+    display: flex;
+    margin: 0px;
+    font-family: var(--fontStyle);
+    background-color: var(--bg_color);
+}
+
+.pic_logo {
+    width: 40%;
+    height: 100vh;
+    background-image: url(bgPic.jpg);
+    background-size: cover;
+
+}
+
+.pic_logo>div {
+    background-color: rgb(0, 0, 0, .5);
+    position: relative;
+    top: 20%;
+}
+
+#logo {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+img {
+    height: 150px;
+}
+
+.pic_logo>p {
+    color: white;
+    position: relative;
+    top: 75%;
+    left: auto;
+    text-align: center;
+}
+
+.info {
+    width: 60%;
+    position: relative;
+    margin: auto;
+}
+
+.form {
+    display: flex;
+    width: auto;
+
+}
+
+input {
+    width: var(--input_width);
+    height: var(--input_height);
+    border-color: #E5E7EB;
+    box-shadow: var(--input_shadow);
+    margin: 2px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+label {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#l_form {
+    margin-right: 85px;
+}
+
+.form_div {
+    padding: var(--left_padding);
+    background-color: white;
+    box-shadow: var(--shadow);
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #596D48;
+    margin-left: var(--left_padding);
+    height: 50px;
+    width: 210px;
+    border-radius: 10px;
+    font-size: 16.5px;
+    font-weight: bold;
+    color: white;
+}
+
+a {
+    color: #596D48;
+}
+
+p {
+    padding-left: var(--left_padding);
+}
+
+.info>div>p {
+    font-size: 22px;
+}
